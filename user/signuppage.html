@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>All in Gregorio &#124 Register</title>
+
+  <!-- Icon -->
+  <link href="../assets/img/brgygregoriologo.png" rel="icon">
+
+  <!-- Font CSS -->
+  <link href="../font.css" rel="stylesheet">
+
+  <!-- CSS Files -->
+  <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet"/>
+
+
+  <!-- Main CSS File -->
+  <link href="../assets/css/signuppage.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <header>Registration</header>
+
+        <form action="#" method="POST">
+            <!--form-first-->
+           <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Information</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" id="FirstName" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="text" id="MidName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" id="LastName" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Suffix (If have)</label>
+                            <input type="text" id="suffix" placeholder="Enter your suffix">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select id="gender" required>
+                                <option disabled selected>Select gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Others">Others</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" id="BirthDate" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" id="MobileNum" placeholder="Enter your mobile number" name="PhoneNumber" pattern="[0-9]{10,11}" required>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>ID Type (e.g. Brgy. ID, Philhealth, etc.)</label>
+                            <input type="text" id="IdType" placeholder="Enter type" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>ID Number</label>
+                            <input type="number" id="IdNumber" placeholder="Enter ID number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Upload ID</label>
+                            <input type="file" id="IdUpload" accept="image/*" required>
+                        </div>
+
+                    </div>
+
+                    <button class="nextBtn mx-auto" id="nextBtn">
+                        <span class="btnText justify-content-center">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+
+                </div> 
+
+                <p class="link my-4">Already have an account? <a href="./loginpage.html">Login here</a>.</p>
+
+            </div>
+            <!--end form-first-->
+
+            <!--form-second-->
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Address Type</label>
+                            <input type="text" placeholder="Permanent or Temporary" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>House Number</label>
+                            <input type="text" placeholder="Enter house number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Street Name</label>
+                            <input type="text" placeholder="Enter street name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Purok</label>
+                            <input type="text" placeholder="Enter purok" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Barangay</label>
+                            <input type="text" placeholder="Enter barangay" required>
+                        </div>
+                        
+                        <div class="input-field">
+                            <label>City</label>
+                            <input type="text" placeholder="Enter city" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Province</label>
+                            <input type="text" placeholder="Enter your province" required>
+                        </div>
+                        
+
+                    </div>
+                </div>
+
+                <div class="details Account">
+                    <span class="title">User Account</span>
+
+                    <div class="fields">
+                        <div class="input-field-two">
+                            <label>Email</label>
+                            <input type="email" id="email" placeholder="Enter your email" required>
+                        </div>
+        
+                        <div class="input-field-two">
+                            <label>Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                            <i class="fas fa-eye" id="show-password"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="message">
+                    <span class="title">Password must contain the following:</span>
+                    <p id="lowercase" class="invalid"> A <b>lowercase</b> letter</p>
+                    <p id="uppercase" class="invalid"> A <b>uppercase</b> letter</p>
+                    <p id="number" class="invalid"> A <b>number</b></p>
+                    <p id="length" class="invalid"> Minimum <b>8 characters</b></p>
+                </div>
+
+                <div class="buttons">
+                    <button class="backBtn mx-auto">
+                        <i class="uil uil-navigator"></i>
+                        <span class="btnText">Back</span>
+                    </button>
+                    
+                    <button class="submit mx-auto" type="submit">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div>
+
+            </div>
+            <!--end form-second-->
+
+        </form>
+    </div>
+
+    <div class="back-home-btn">
+        <button onclick="window.location.href='/index.html';" class="back-to-prev d-flex align-items-center justify-content-center "><i class="bi bi-house"></i></button>
+        <!--<p class="back-to-home">Back to home</p>-->
+    </div>
+
+    <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+    <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+  <!-- Template Main JS File -->
+  <script src="../assets/js/signupform.js"></script>
+  <script src="../assets/js/passwordvalidation.js"></script>
+
+
+</body>
+
+</html>
