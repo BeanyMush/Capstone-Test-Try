@@ -615,7 +615,9 @@ a:hover {
 # Services
 --------------------------------------------------------------*/
 #services {
-    padding: 100px 40px;
+    padding: 200px 40px;
+    min-height: 3720px;
+    max-height: 4320px;
 }
 
 .cards {
@@ -640,8 +642,9 @@ a:hover {
   }
 
 .card h1 {
-    margin-bottom: 30px;
+    margin: 10px 0 10px 0;
     color: #0E49B5;
+    text-align: center;
 }
 
 .card p {
@@ -669,6 +672,12 @@ a:hover {
     font-size: 18px;
     cursor: pointer;
     transition: 0.3s
+}
+
+i {
+  color: #0E49B5;
+  font-size: 60px;
+  margin-bottom: 10px;
 }
   
 /*--------------------------------------------------------------
